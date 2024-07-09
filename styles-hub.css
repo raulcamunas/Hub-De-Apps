@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+.top-bar {
+    background-color: #3498db;
+    padding: 10px;
+    text-align: right;
+}
+
+.top-bar button {
+    background-color: #fff;
+    color: #3498db;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.top-bar button.change-color {
+    animation: colorChange 0.5s infinite alternate;
+}
+
+.top-bar button.change-color span {
+    display: inline-block;
+}
+
+@keyframes colorChange {
+    from {
+        color: #3498db;
+    }
+
+    to {
+        color: #e74c3c; 
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.apps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.app {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app:hover {
+    transform: scale(1.05);
+}
+
+.app h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.app a {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.app a:hover {
+    background-color: #2980b9;
+}

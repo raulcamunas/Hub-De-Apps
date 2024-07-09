@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles-ppt.css">
+  <title>Piedra, Papel o Tijeras</title>
+</head>
+<body>
+  <div class="top-bar">
+    <button onclick="changeBackgroundColor()">Cambiar Fondo</button>
+    <button onclick="goBack()">Regresar</button>
+  </div>
+  <div class="container">
+    <h1>Piedra, Papel o Tijeras</h1>
+    <div id="game">
+      <div class="piedra">
+          <button class="btn" onclick="makeMove('piedra')">Piedra</button>
+          <img src="https://img.freepik.com/vector-premium/bloque-piedra-juego-dibujos-animados-roca-elemento-paisaje_543062-4394.jpg" alt="Imagen de Pokeapi" width="100">
+      </div>
+      <div class="papel">
+          <button class="btn" onclick="makeMove('papel')">Papel</button>
+          <img src="https://img.freepik.com/vector-premium/papel-o-pergamino-enrollado-lados-dibujos-animados-linea-garabato_253359-2059.jpg" alt="Imagen de Pokeapi" width="100">
+      </div>
+      <div class="tijeras">
+          <button class="btn" onclick="makeMove('tijeras')">Tijeras</button>
+          <img src="https://media.istockphoto.com/id/1043551106/es/vector/dibujos-animados-de-vector-de-tijeras.jpg?s=612x612&w=0&k=20&c=CvXRGBJy9rs_9SshpfA5gPLxFvW53m4TZa6mUGka2ok=" alt="Imagen de Pokeapi" width="100">
+      </div>
+    </div>
+    <div id="result-container">
+      <p id="result"></p>
+    </div>
+    <div id="score">Tu: 0 - Máquina: 0 - Empates: 0</div>
+  </div>
+  <script src="scripts-PPT.js"></script>
+</body>
+</html>
